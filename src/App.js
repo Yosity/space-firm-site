@@ -53,7 +53,7 @@ function App() {
     </nav>
 
     <Routes>
-      <Route path='/' element = {<Home setIndex = {setIndex}/>}/>
+      <Route path="/space-tourism-site" element = {<Home setIndex = {setIndex}/>}/>
       <Route path='/destination' element = {<Destination/>}/>
       <Route path='/crew' element = {<Crew/>}/>
       <Route path='/technology' element = {<Technology/>}/>
