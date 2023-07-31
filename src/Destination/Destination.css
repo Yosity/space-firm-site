@@ -1,0 +1,238 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+.Destination{
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 2rem;
+    background: url("../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width : 900px) {
+    .Destination{
+        background: url("../assets/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 13rem;
+    }
+}
+.description-title{
+    font-family: 'Barlow Condensed', sans-serif;
+    & b{
+        color: #626474;
+        margin-right: 0.8rem;
+    }
+}
+h2{
+    font-size: var(--Large-text-size);
+    letter-spacing: 3px;
+    color: white;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.destination-grid{
+    width: 90%;
+   
+    margin: auto;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+@media (max-width : 900px) {
+    .destination-grid{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        gap: 4rem;
+    }
+}
+.planet-img{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    & h2{
+        padding-bottom: 3rem;
+    }
+    & img{
+        -webkit-animation: rotate 15s linear  infinite;
+                animation: rotate 15s linear  infinite;
+        width: 90%;
+        /* background-color: antiquewhite; */
+    }
+}
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+.planet-name{
+    font-size: var( --veryLarge-text-size);
+    color: white;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+.planet-info{
+    -ms-flex-item-align: self-end;
+        -ms-grid-row-align: self-end;
+        align-self: self-end;
+
+}
+.description{
+    font-size: var(--text-size);
+    max-width: 400px;
+    line-height: 1.7rem;
+    margin: 2rem 0;
+}
+.distance-travel-container{
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-top: 1px solid snow;
+    padding-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    & p{
+        font-size: var(--text-size);
+        line-height: 1.8rem;
+        & span{
+            color: white;
+            font-size: var(--Large-text-size);
+        }
+    }
+    
+
+}
+@media (max-width : 900px) {
+    .planet-info{
+        -ms-flex-item-align: unset;
+            -ms-grid-row-align: unset;
+            align-self: unset;
+    }
+    img{
+        margin: auto;
+
+    }
+    .distance-travel-container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 2rem;
+        & p{
+            font-size: 0.8rem;
+            & span{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+}
+.planet-selector{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+    
+}
+.planetBtn{
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+ .planetBtn:hover{
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.planetBtn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+
+.planetBtn.activated::after{
+    width: 100%;
+}
