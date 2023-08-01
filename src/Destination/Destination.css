@@ -100,6 +100,7 @@ h2{
     -webkit-animation: rotate 15s linear  infinite;
             animation: rotate 15s linear  infinite;
     width: 90%;
+    user-select: none;
 }
 @-webkit-keyframes rotate {
     from{
