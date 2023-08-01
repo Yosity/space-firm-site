@@ -36,10 +36,10 @@
 }
 .description-title{
     font-family: 'Barlow Condensed', sans-serif;
-    & b{
-        color: #626474;
-        margin-right: 0.8rem;
-    }
+}
+.description-title b{
+    color: #626474;
+    margin-right: 0.8rem;
 }
 h2{
     font-size: var(--Large-text-size);
@@ -92,15 +92,14 @@ h2{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    & h2{
-        padding-bottom: 3rem;
-    }
-    & img{
-        -webkit-animation: rotate 15s linear  infinite;
-                animation: rotate 15s linear  infinite;
-        width: 90%;
-        /* background-color: antiquewhite; */
-    }
+}
+.planet-img h2{
+    padding-bottom: 3rem;
+}
+.planet-img img{
+    -webkit-animation: rotate 15s linear  infinite;
+            animation: rotate 15s linear  infinite;
+    width: 90%;
 }
 @-webkit-keyframes rotate {
     from{
@@ -156,16 +155,14 @@ h2{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    & p{
-        font-size: var(--text-size);
-        line-height: 1.8rem;
-        & span{
-            color: white;
-            font-size: var(--Large-text-size);
-        }
-    }
-    
-
+}
+.distance-travel-container p{
+    font-size: var(--text-size);
+    line-height: 1.8rem;
+}
+.distance-travel-container p span{
+    color: white;
+    font-size: var(--Large-text-size);
 }
 @media (max-width : 900px) {
     .planet-info{
@@ -183,12 +180,12 @@ h2{
             -ms-flex-direction: column;
                 flex-direction: column;
         gap: 2rem;
-        & p{
-            font-size: 0.8rem;
-            & span{
-                font-size: 1.5rem;
-            }
-        }
+    }
+    .distance-travel-container p{
+        font-size: 0.8rem;
+    }
+    .distance-travel-container p span{
+        font-size: 1.5rem;
     }
     
 }

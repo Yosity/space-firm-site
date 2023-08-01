@@ -41,10 +41,11 @@
     margin-bottom: 3rem;
     font-weight: 400;
     font-family: 'Barlow Condensed', sans-serif;
-    & b{
-        color: #626474;
-        margin-right: 0.8rem;
-    }
+    
+}
+.title b{
+    color: #626474;
+    margin-right: 0.8rem;
 }
 
 .crew-grid{
@@ -72,11 +73,11 @@
     text-align: center;
     gap: 0.5rem;
 
-    & p{
-        line-height: 1.5rem;
-        max-width: 480px;
-        margin: auto;
-    }
+}
+.crew-info p{
+    line-height: 1.5rem;
+    max-width: 480px;
+    margin: auto;
 }
 
 .occupation{
@@ -145,9 +146,9 @@
             justify-self: start;
         gap: 1rem;
         text-align: start;
-        & p{
-            margin: unset;
-        }
+    }
+    .crew-info p{
+        margin: unset;
     }
     .name{
         line-height: 3rem;

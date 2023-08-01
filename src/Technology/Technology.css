@@ -42,10 +42,10 @@
     font-weight: 400;
     padding-left: 2rem;
     font-family: 'Barlow Condensed', sans-serif;
-    & b{
-        color: #626474;
-        margin-right: 0.8rem;
-    }
+}
+.tech-title b{
+    color: #626474;
+    margin-right: 0.8rem;
 }
 
 .tech-grid{
@@ -74,11 +74,11 @@
     text-align: center;
     gap: 0.5rem;
 
-    & p{
-        line-height: 1.8rem;
-        max-width: 520px;
-        margin: auto;
-    }
+}
+.tech-info p{
+    line-height: 1.8rem;
+    max-width: 520px;
+    margin: auto;
 }
 
 .tech-type{
@@ -151,9 +151,9 @@
             justify-self: start;
         gap: 0;
         text-align: start;
-        & p{
-            margin: unset;
-        }
+    }
+    .tech-info p{
+        margin: unset;
     }
     .tech-name{
         line-height: 3rem;
