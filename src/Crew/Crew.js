@@ -19,7 +19,7 @@ let Crew = () =>{
         i++; 
       }
     return (
-        <div className="Crew">
+        <main className="Crew">
          <div className="crew-grid">
          <h2 className="title"><b>02</b>meet your crew</h2>
           <div className="crew-info">
@@ -57,7 +57,7 @@ let Crew = () =>{
           <img className="person-img" src={personPic[index]} alt="" />
             </div>
         </div>
-        </div>
+        </main>
     );
 }
 

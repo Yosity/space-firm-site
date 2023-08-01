@@ -23,7 +23,7 @@ let Technology = () =>{
        i++; 
      }
     return (
-    <div className="Technology">
+    <main className="Technology">
          <div className="tech-grid">
             <h2 className="tech-title"><b>03</b> space launce 101</h2>
             <div className="tech-img-container">
@@ -58,7 +58,7 @@ let Technology = () =>{
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     );
 }
 

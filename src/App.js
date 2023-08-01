@@ -15,7 +15,7 @@ function App() {
   let burgerMenu = document.querySelector(".hamburger");
   let mobileNav = document.querySelector("ul");
   return (
-    <div className='App'>
+    <main className='App'>
       <div onClick={()=>{
         burgerMenu.classList.toggle("open");
         mobileNav.classList.toggle("activated");
@@ -59,7 +59,7 @@ function App() {
       <Route path='/space-firm-site/technology' element = {<Technology/>}/>
       <Route/>
     </Routes>
-    </div>
+    </main>
   );
 }
 

@@ -3,7 +3,7 @@ import {Route,Routes,Link} from "react-router-dom"
 import Destination from "../Destination/Destination";
 let Home = ({setIndex}) =>{
     return (
-        <div className="Home">
+        <main className="Home">
             <div className="home-main-container">
             <div className="text-section">
                 <h1 className="home-title">
@@ -16,13 +16,13 @@ let Home = ({setIndex}) =>{
                 </p>
             </div>
             <div className="explore-container">
-            <Link to= "/destination" onClick={()=>{setIndex(1);}}>EXPLORE</Link>
+            <Link to= "/space-firm-site/destination" onClick={()=>{setIndex(1);}}>EXPLORE</Link>
             </div>
             </div>
         <Routes>
-        <Route path='/destination' element = {<Destination/>}/>
+        <Route path='/space-firm-site/destination' element = {<Destination/>}/>
         </Routes>
-        </div>
+        </main>
     );
 }
 
