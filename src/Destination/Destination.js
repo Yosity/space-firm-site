@@ -23,7 +23,7 @@ function Destination() {
       i++; 
     }
     return (
-      <main className="Destination">
+      <section className="Destination">
         <div className="destination-grid">
           <div className="planet-img">
           <h2 className="description-title"><b>01</b> pick your destination</h2>
@@ -64,7 +64,7 @@ function Destination() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     );
   }
   

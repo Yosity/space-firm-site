@@ -3,7 +3,7 @@ import {Route,Routes,Link} from "react-router-dom"
 import Destination from "../Destination/Destination";
 let Home = ({setIndex}) =>{
     return (
-        <main className="Home">
+        <section className="Home">
             <div className="home-main-container">
             <div className="text-section">
                 <h1 className="home-title">
@@ -22,7 +22,7 @@ let Home = ({setIndex}) =>{
         <Routes>
         <Route path='/space-firm-site/destination' element = {<Destination/>}/>
         </Routes>
-        </main>
+        </section>
     );
 }
 
