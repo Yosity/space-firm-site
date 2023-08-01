@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/space-firm-site/static/css/main.8c1a9801.css",
+    "main.js": "/space-firm-site/static/js/main.39296af1.js",
+    "static/media/background-home-desktop.jpg": "/space-firm-site/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/image-moon.png": "/space-firm-site/static/media/image-moon.d287d07182de3015952f.png",
+    "static/media/background-destination-desktop.jpg": "/space-firm-site/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/image-europa.png": "/space-firm-site/static/media/image-europa.3e95f7d0a16fe2ebf4c6.png",
+    "static/media/image-anousheh-ansari.webp": "/space-firm-site/static/media/image-anousheh-ansari.bb42b775ee0b12430f3a.webp",
+    "static/media/image-victor-glover.webp": "/space-firm-site/static/media/image-victor-glover.1c271f99bab8b06d7ab5.webp",
+    "static/media/image-mars.png": "/space-firm-site/static/media/image-mars.1b224c8663251270d79f.png",
+    "static/media/image-douglas-hurley.webp": "/space-firm-site/static/media/image-douglas-hurley.e4c7def427824ef543c0.webp",
+    "static/media/image-spaceport-portrait.jpg": "/space-firm-site/static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
+    "static/media/image-spaceport-landscape.jpg": "/space-firm-site/static/media/image-spaceport-landscape.0f3ca5c05a3e87191ea7.jpg",
+    "static/media/background-crew-desktop.jpg": "/space-firm-site/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/image-mark-shuttleworth.webp": "/space-firm-site/static/media/image-mark-shuttleworth.665e198adc22fcdf7810.webp",
+    "static/media/image-titan.png": "/space-firm-site/static/media/image-titan.d4b078f9ce17e686ae99.png",
+    "static/media/background-technology-desktop.jpg": "/space-firm-site/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "static/media/image-space-capsule-portrait.jpg": "/space-firm-site/static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg",
+    "static/media/image-space-capsule-landscape.jpg": "/space-firm-site/static/media/image-space-capsule-landscape.d672da81d5ff3ada7301.jpg",
+    "static/media/image-launch-vehicle-portrait.jpg": "/space-firm-site/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
+    "static/media/background-home-mobile.jpg": "/space-firm-site/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/image-launch-vehicle-landscape.jpg": "/space-firm-site/static/media/image-launch-vehicle-landscape.4281a59ff7186488fe6a.jpg",
+    "static/media/background-destination-mobile.jpg": "/space-firm-site/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
+    "index.html": "/space-firm-site/index.html",
+    "static/media/logo.svg": "/space-firm-site/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
+    "main.8c1a9801.css.map": "/space-firm-site/static/css/main.8c1a9801.css.map",
+    "main.39296af1.js.map": "/space-firm-site/static/js/main.39296af1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c1a9801.css",
+    "static/js/main.39296af1.js"
+  ]
+}
