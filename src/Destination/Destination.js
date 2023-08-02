@@ -31,30 +31,12 @@ function Destination() {
           </div>
           <div className="planet-info">
             <nav className = "planet-selector">
-              {
-                index === 0 ?
-                <button onClick={() => {setIndex(0);}} className="planetBtn activated">MOON</button>
-                :
-                <button onClick={() => {setIndex(0);}} className="planetBtn">MOON</button>
-              }
-             {
-                index === 1 ?
-                <button onClick={() => {setIndex(1);}} className="planetBtn activated">MARS</button>
-                :
-                <button onClick={() => {setIndex(1);}} className="planetBtn">MARS</button>
-              }             
-             {
-                index === 2 ?
-                <button onClick={() => {setIndex(2);}} className="planetBtn activated">EUROPA</button>
-                :
-                <button onClick={() => {setIndex(2);}} className="planetBtn">EUROPA</button>
-              }             
-             {
-                index === 3 ?
-                <button onClick={() => {setIndex(3);}} className="planetBtn activated">TITAN</button>
-                :
-                <button onClick={() => {setIndex(3);}} className="planetBtn">TITAN</button>
-              }             
+           
+                <button onClick={() => {setIndex(0);}} className={`planetBtn ${index ===0 ? "activated" : ""}`}>MOON</button>
+                <button onClick={() => {setIndex(1);}} className={`planetBtn ${index ===1 ? "activated" : ""}`}>MARS</button>
+                <button onClick={() => {setIndex(2);}} className={`planetBtn ${index ===2 ? "activated" : ""}`}>EUROPA</button>
+                <button onClick={() => {setIndex(3);}} className={`planetBtn ${index ===3 ? "activated" : ""}`}>TITAN</button>
+             
             </nav>
             <h1 className="planet-name">{planetName[index]}</h1>
             <p className ="description">{planetInfo[index]}</p>

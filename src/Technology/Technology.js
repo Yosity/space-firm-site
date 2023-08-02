@@ -32,24 +32,11 @@ let Technology = () =>{
             </div>
             <div className="tech-info">
                 <div className="tech-selector">
-                {
-                index === 0 ?
-                <button onClick={() => {setIndex(0);}} className="tech-btn activated">1</button>
-                :
-                <button onClick={() => {setIndex(0);}} className="tech-btn">1</button>
-              }
-             {
-                index === 1 ?
-                <button onClick={() => {setIndex(1);}} className="tech-btn activated">2</button>
-                :
-                <button onClick={() => {setIndex(1);}} className="tech-btn">2</button>
-              }             
-             {
-                index === 2 ?
-                <button onClick={() => {setIndex(2);}} className="tech-btn activated">3</button>
-                :
-                <button onClick={() => {setIndex(2);}} className="tech-btn">3</button>
-              }             
+
+                <button onClick={() => {setIndex(0);}} className={`tech-btn ${index ===0 ? "activated" : ""}`}>1</button>
+                <button onClick={() => {setIndex(1);}} className={`tech-btn ${index ===1 ? "activated" : ""}`}>2</button>
+                <button onClick={() => {setIndex(2);}} className={`tech-btn ${index ===2 ? "activated" : ""}`}>3</button>
+
                 </div>
                 <div>
                 <h2 className="tech-type">THE TERMINOLOGY...</h2>

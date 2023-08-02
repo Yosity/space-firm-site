@@ -27,30 +27,12 @@ let Crew = () =>{
             <h2 className="name">{name[index]}</h2>
             <p className="person-info">{info[index]}</p>
             <nav className = "crewmate-selector">
-              {
-                index === 0 ?
-                <button onClick={() => {setIndex(0);}} className="crewBtn activated"></button>
-                :
-                <button onClick={() => {setIndex(0);}} className="crewBtn"></button>
-              }
-             {
-                index === 1 ?
-                <button onClick={() => {setIndex(1);}} className="crewBtn activated"></button>
-                :
-                <button onClick={() => {setIndex(1);}} className="crewBtn"></button>
-              }             
-             {
-                index === 2 ?
-                <button onClick={() => {setIndex(2);}} className="crewBtn activated"></button>
-                :
-                <button onClick={() => {setIndex(2);}} className="crewBtn"></button>
-              }             
-             {
-                index === 3 ?
-                <button onClick={() => {setIndex(3);}} className="crewBtn activated"></button>
-                :
-                <button onClick={() => {setIndex(3);}} className="crewBtn"></button>
-              }             
+
+                <button onClick={() => {setIndex(0);}} className={`crewBtn ${index ===0 ? "activated" : ""}`}></button>
+                <button onClick={() => {setIndex(1);}} className={`crewBtn ${index ===1 ? "activated" : ""}`}></button>
+                <button onClick={() => {setIndex(2);}} className={`crewBtn ${index ===2 ? "activated" : ""}`}></button>
+                <button onClick={() => {setIndex(3);}} className={`crewBtn ${index ===3 ? "activated" : ""}`}></button>
+             
             </nav>
           </div>
           <div className="img-container">
