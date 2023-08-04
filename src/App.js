@@ -6,52 +6,58 @@ import Crew from "./Crew/Crew"
 import Technology from "./Technology/Technology"
 import {Route,Routes,Link} from "react-router-dom"
 
-import { useState } from 'react';
+import {useState} from 'react';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [index, setIndex] = useState(0);
 
-  let [index,setIndex] = useState(0);
-  
-  let burgerMenu = document.querySelector(".hamburger");
-  let mobileNav = document.querySelector("ul");
+  const handleMenuClick = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleLinkClick = (index) => {
+    setIndex(index);
+    closeMenu();
+  };
+
+  const handleOutsideClick = (event) => {
+    if (!event.target.closest('.header-nav') && !event.target.closest('.hamburger')) {
+      closeMenu();
+    }
+  };
+
+  document.addEventListener('click', handleOutsideClick);
+
   return (
-    <main className='App'>
-      <div onClick={()=>{
-        burgerMenu.classList.toggle("open");
-        mobileNav.classList.toggle("activated");
-        }} className='hamburger'>
+    <header>
+      <div className={`hamburger${isMenuOpen ? ' open' : ''}`} onClick={handleMenuClick}>
         <span className='line'></span>
         <span className='line'></span>
         <span className='line'></span>
         <span className='line'></span>
       </div>
-    <img id='logo' src={logo} alt="logo"/>
-    <nav className='header-nav'>
-      <ul>
-        {
-          index === 0 ? <li><Link to = "/space-firm-site" className='activated' >HOME</Link></li>
-          :
-          <li><Link to = "/space-firm-site" onClick={()=>{setIndex(0);}}>HOME</Link></li>
-        }
-        {
-          index === 1 ? <li><Link to= "/space-firm-site/destination" className='activated'>DESTINATION</Link></li>
-          :
-          <li><Link to= "/space-firm-site/destination" onClick={()=>{setIndex(1);}}>DESTINATION</Link></li>
-        }
-        {
-          index === 2 ? <li><Link to= "/space-firm-site/crew" className='activated' >CREW</Link></li>
-          :
-          <li><Link to= "/space-firm-site/crew" onClick={()=>{setIndex(2);}}>CREW</Link></li>
-        }
-        {
-          index === 3 ? <li><Link to= "/space-firm-site/technology" className='activated' >TECHNOLOGY</Link></li> 
-          :
-          <li><Link to= "/space-firm-site/technology" onClick={()=>{setIndex(3);}}>TECHNOLOGY</Link></li> 
-        }
-        
-      </ul>
-    </nav>
-
+      <img id='logo' src={logo} alt="logo" />
+      <nav className={`header-nav${isMenuOpen ? ' activated' : ''}`}>
+        <ul>
+          <li onClick={closeMenu}>
+            <Link to="/space-firm-site" className={index === 0 ? 'activated' : ''} onClick={() => handleLinkClick(0)}>HOME</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="/space-firm-site/destination" className={index === 1 ? 'activated' : ''} onClick={() => handleLinkClick(1)}>DESTINATION</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="/space-firm-site/crew" className={index === 2 ? 'activated' : ''} onClick={() => handleLinkClick(2)}>CREW</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="/space-firm-site/technology" className={index === 3 ? 'activated' : ''} onClick={() => handleLinkClick(3)}>TECHNOLOGY</Link>
+          </li>
+        </ul>
+      </nav>
     <Routes>
       <Route path="/space-firm-site" element = {<Home setIndex = {setIndex}/>}/>
       <Route path='/space-firm-site/destination' element = {<Destination/>}/>
@@ -59,7 +65,7 @@ function App() {
       <Route path='/space-firm-site/technology' element = {<Technology/>}/>
       <Route/>
     </Routes>
-    </main>
+    </header>
   );
 }
 
